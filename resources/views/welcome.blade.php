@@ -45,6 +45,25 @@
                     </svg>
                 </div>
 
+                <div class="flex">
+                    <form class="mr-2" action="/success" method="POST">
+                        @csrf
+                        <button class="bg-gray-100 px-4 py-4" type="submit">Submit success</button>
+                    </form>
+                    <form class="mr-2"  action="/error" method="POST">
+                        @csrf
+                        <button class="bg-gray-100 px-4 py-4" type="submit">Submit Error</button>
+                    </form>
+                    <form class="mr-2" action="/toast-success" method="POST">
+                        @csrf
+                        <button class="bg-gray-100 px-4 py-4" type="submit">Toast success</button>
+                    </form>
+                    <form action="/toast-error" method="POST">
+                        @csrf
+                        <button class="bg-gray-100 px-4 py-4" type="submit">Toast Error</button>
+                    </form>
+                </div>
+
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
